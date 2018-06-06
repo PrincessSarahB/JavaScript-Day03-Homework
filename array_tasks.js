@@ -28,10 +28,10 @@ var arrayTasks = {
 
 	findDuplicates: function (arr) {
 		let duplicates = [];
-		arr.forEach(function(element, index){
-			if(arr.indexOf(element, index + 1) > -1){
-				if(duplicates.indexOf(element) === -1 ){
-					duplicates.push(element);
+		arr.forEach(function(number, index){
+			if(arr.indexOf(number, index + 1) > -1){
+				if(duplicates.indexOf(number) === -1 ){
+					duplicates.push(number);
 				}
 			}
 
@@ -40,9 +40,15 @@ var arrayTasks = {
 		return duplicates;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		let newArray = [];
+		arr.forEach(function(item){
+			if(item !== valueToRemove){
+				newArray.push(item);
+			}
+		})
+		return newArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
