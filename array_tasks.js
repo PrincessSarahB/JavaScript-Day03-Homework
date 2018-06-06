@@ -60,10 +60,15 @@ var arrayTasks = {
 		 return indexArray;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
-
+	sumOfAllEvenNumbersSquared: function (arr) {
+		let total = 0
+			arr.forEach(function(number){
+				if(number % 2 === 0){
+					(total += (number * number));
+				}
+			});
+	 return total;
+}
 }
 
 module.exports = arrayTasks
