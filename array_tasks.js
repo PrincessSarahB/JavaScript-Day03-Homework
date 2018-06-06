@@ -11,16 +11,20 @@ var arrayTasks = {
 	},
 
 	square: function (arr) {
-		squared = [];
+		var squared = [];
 		for(number of arr){
 			var result = number * number;
 			squared.push(result);
 		} return squared;
 	},
 
-	// sum: function (arr) {
+	sum: function (arr) {
+		var total = 0;
+		for(number of arr){
+			total += number;
+		} return total;
 
-	// },
+	},
 
 	// findDuplicates: function (arr) {
 
