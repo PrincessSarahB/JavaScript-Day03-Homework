@@ -12,10 +12,12 @@ var arrayTasks = {
 
 	square: function (arr) {
 		var squared = [];
-		for(number of arr){
+		arr.forEach(function(number){
 			var result = number * number;
 			squared.push(result);
-		} return squared;
+
+		});
+		return squared;
 	},
 
 	sum: function (arr) {
