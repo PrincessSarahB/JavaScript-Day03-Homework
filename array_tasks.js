@@ -22,9 +22,10 @@ var arrayTasks = {
 
 	sum: function (arr) {
 		var total = 0;
-		for(number of arr){
+		arr.forEach(function(number){
 			total += number;
-		} return total;
+		});
+		return total;
 
 	},
 
